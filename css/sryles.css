@@ -1,0 +1,217 @@
+:root {--header-color: #000000;
+    --text-color: #757575;
+    --main-color: #FFFFFF;
+    --logo-color: #2196F3; 
+    --portfolio-main: #212121;
+    --background-color: #2F303A;
+ 
+}
+body {
+    color: var(--header-color);
+    font-family: Roboto, sans-serif;
+    
+}
+/* Header */
+.marker {
+    list-style: none;
+}
+.link {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--header-color);
+    text-decoration: none;
+    cursor: pointer;
+}
+.link:hover, .link:focus {
+    color: var(--logo-color);
+}
+/* logo color */
+.logo-text {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--header-color);
+    text-decoration: none;
+}
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--logo-color);
+    text-decoration: none;
+
+}
+
+/*  Контакти */
+.contact-list {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--text-color);
+    text-decoration: none;
+}
+.contact-list:hover, .contact-list:focus {
+    color: var(--logo-color);
+}
+
+/* Hero */
+.hero {
+    color: var(--main-color);
+    background-color: var(--background-color);
+    text-align: center;
+}
+.hero-btn {
+    color: var(--main-color);
+    background-color: var(--logo-color);
+    border: 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    cursor: pointer;
+    
+}
+
+/* Особливості */
+.features-title {
+    color: var(--header-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+.features-text {
+    color: var(--text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+/* Чим ми займаємося */
+.activity {
+    color: var(--header-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+   
+}
+
+/* Наша команда */
+.team {
+    color: var(--header-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-name {
+    color: var(--header-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-role {
+    color: var(--text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    letter-spacing: 0.03em;
+}
+/* Футер */
+.logo-footer {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+}
+.footer {
+    background-color: var(--background-color);
+}
+
+.address {
+    color: var(--main-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+.contacts-list {
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+
+/*  Портфоліо */
+.projects {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+.project-filter-btn{
+    color: var(--portfolio-main);
+    border: 0;
+}
+.project-filter-btn:hover {
+    color: var(--main-color);
+    background-color: var(--logo-color);
+    border: 0;
+}
+.project-title {
+    color: var(--portfolio-main);
+}
+.project-dsc {
+    color: var(--text-color);
+}
