@@ -30,6 +30,9 @@ body {
 .link:hover, .link:focus {
     color: var(--logo-color);
 }
+.link.current {
+    color: var(--logo-color);
+}
 /* Логотип */
 
 .logo-text {
