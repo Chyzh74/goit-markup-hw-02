@@ -85,6 +85,7 @@ body {
     line-height: 1.87;
     letter-spacing: 0.06em;
     cursor: pointer;
+    font-family: inherit;
     
 }
 .hero-btn:hover, .hero-btn:focus{
@@ -192,8 +193,12 @@ body {
     color: var(--portfolio-main);
     border: 0;
     cursor: pointer;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    font-family: inherit;
 }
-.project-filter-btn:hover {
+.project-filter-btn:hover, .project-filter-btn:focus {
     color: var(--main-color);
     background-color: var(--logo-color);
     border: 0;
@@ -201,7 +206,13 @@ body {
 }
 .project-title {
     color: var(--portfolio-main);
-}
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.18;
+    }
 .project-dsc {
     color: var(--text-color);
-}
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.18;
+    }
