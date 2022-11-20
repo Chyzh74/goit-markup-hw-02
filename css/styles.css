@@ -15,6 +15,7 @@ body {
 img {
     display: block;
 }
+
 .marker {
     list-style: none;
     padding: 0;
@@ -24,7 +25,9 @@ img {
     width: 1200px;
     margin-left: auto;
     margin-right: auto;
-    outline: 2px solid tomato;
+    padding-right: 15px;
+    padding-left: 15px;
+    /* outline: 2px solid tomato; */
 }
 .main-nav {
     display: flex;
@@ -92,6 +95,7 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.19;
     color: var(--logo-color);
     text-decoration: none;
+    font-style: normal;
 
 }
 
@@ -113,8 +117,8 @@ h1,h2,h3,h4,h5,h6,p {
 .hero {
     background-color: var(--background-color);
     height: 600px;
-
-}
+    
+}   
 .hero-title {
     color: var(--main-color);
     font-weight: 900;
@@ -161,54 +165,55 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.14;
     text-transform: uppercase;
     margin-bottom: 10px;
-    
+        
 }
 .features-text {
     color: var(--text-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
-    
-}
-.features-items {
-    width: 270px;
-    padding-top: 94px;
     margin-bottom: 94px;
-    background-color: orange;
-    display: inline-flex;
-  
+    width: 270px;
+}
+.features {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
    
 } 
 
 /* Чим ми займаємося */
 .activity {
     color: var(--header-color);
-    padding-bottom: 90px;
+    padding-bottom: 94px;
     margin-top: 0;
     display: flex;
     justify-content: space-between;
 }
 .activity-title {
     text-align: center;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
 }
 
-/* .activity-list {
-    display: flex;
-    justify-content: space-between;
-} */
-
 /* Наша команда */
 .team {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 94px;
+    
+}
+.team-title {
     color: var(--header-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.16;
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
+    padding-top: 94px;
+    padding-bottom: 50px; 
 
 }
 .team-name {
@@ -216,6 +221,8 @@ h1,h2,h3,h4,h5,h6,p {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
+    padding-top: 30px;
+    padding-bottom: 10px;
    
 }
 .team-role {
@@ -225,6 +232,16 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.18;
 
 }
+.team-list {
+    width: 270px;
+    height: 368px;
+    background: var(--main-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+
 /* Футер */
 .logo-footer {
     font-family: 'Raleway';
@@ -235,14 +252,19 @@ h1,h2,h3,h4,h5,h6,p {
 .footer {
     background-color: var(--background-color);
 }
-
-.address {
+.address-title {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    
+}
+.address-point {
     color: var(--main-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     font-style: normal;
-    
+    padding-top: 20px;
+     
 }
 .contacts-list {
     text-decoration: none;
@@ -251,6 +273,7 @@ h1,h2,h3,h4,h5,h6,p {
     line-height: 1.71;
     color: rgba(255, 255, 255, 0.6);
     font-style: normal;
+    padding-top: 9px;
 }
 .contacts-list:hover, .contacts-list:focus {
     color: var(--logo-color);
@@ -270,7 +293,11 @@ h1,h2,h3,h4,h5,h6,p {
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-.project-filter-btn{
+.project-btn {
+    display: flex;
+    justify-content: center;
+}
+.project-filter-btn {
     color: var(--portfolio-main);
     border: 0;
     cursor: pointer;
@@ -278,22 +305,43 @@ h1,h2,h3,h4,h5,h6,p {
     font-size: 16px;
     line-height: 1.62;
     font-family: inherit;
+    padding: 0;
+    padding-right: 8px;
+    margin-top: 94px;
+    
 }
 .project-filter-btn:hover, .project-filter-btn:focus {
     color: var(--main-color);
     background-color: var(--logo-color);
     border: 0;
+    min-width: 73px;
+    height: 38px;
+    border-radius: 4px;
     
+    
+}
+.project-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 34px;
+    padding-bottom: 94px;
 }
 .project-title {
     color: var(--portfolio-main);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.18;
-    }
+    padding-top: 20px;
+    padding-left: 24px;    
+}
 .project-dsc {
     color: var(--text-color);
     font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
-    }
+    padding-top: 4px;
+    padding-bottom: 50px;
+    padding-left: 24px;
+
+}
